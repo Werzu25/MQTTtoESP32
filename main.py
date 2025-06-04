@@ -24,8 +24,9 @@ def on_publish(client, userdata, mid):
 keys = (keyboard.KeyCode.from_char('w'),
         keyboard.KeyCode.from_char('a'),
         keyboard.KeyCode.from_char('s'),
-        keyboard.KeyCode.from_char('d'))
-direction = ('UP','LEFT','DOWN','RIGHT')
+        keyboard.KeyCode.from_char('d'),
+        keyboard.Key.enter)
+direction = ('UP','LEFT','DOWN','RIGHT','ENTER')
 
 pressed_keys = set()
 
